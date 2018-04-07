@@ -14,6 +14,13 @@
 		0103096C20793F590068D596 /* AbstractFactoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103096B20793F590068D596 /* AbstractFactoryDemoTests.m */; };
 		0103097720793F590068D596 /* AbstractFactoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103097620793F590068D596 /* AbstractFactoryDemoUITests.m */; };
 		0103098920793FAF0068D596 /* DoRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103098820793FAF0068D596 /* DoRootVC.m */; };
+		0103098E2079414E0068D596 /* DORedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103098D2079414E0068D596 /* DORedView.m */; };
+		010309912079415A0068D596 /* DOBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 010309902079415A0068D596 /* DOBlueView.m */; };
+		01030994207941790068D596 /* DORedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01030993207941790068D596 /* DORedLabel.m */; };
+		01030997207941840068D596 /* DOBlueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01030996207941840068D596 /* DOBlueLabel.m */; };
+		0103099A207941BA0068D596 /* DOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01030999207941BA0068D596 /* DOFactory.m */; };
+		0103099D207941D10068D596 /* DORedFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103099C207941D10068D596 /* DORedFactory.m */; };
+		010309A0207941DD0068D596 /* DOBlueFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103099F207941DD0068D596 /* DOBlueFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,20 @@
 		0103097820793F590068D596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0103098720793FAF0068D596 /* DoRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoRootVC.h; sourceTree = "<group>"; };
 		0103098820793FAF0068D596 /* DoRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoRootVC.m; sourceTree = "<group>"; };
+		0103098C2079414E0068D596 /* DORedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORedView.h; sourceTree = "<group>"; };
+		0103098D2079414E0068D596 /* DORedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORedView.m; sourceTree = "<group>"; };
+		0103098F207941590068D596 /* DOBlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBlueView.h; sourceTree = "<group>"; };
+		010309902079415A0068D596 /* DOBlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBlueView.m; sourceTree = "<group>"; };
+		01030992207941790068D596 /* DORedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORedLabel.h; sourceTree = "<group>"; };
+		01030993207941790068D596 /* DORedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORedLabel.m; sourceTree = "<group>"; };
+		01030995207941840068D596 /* DOBlueLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBlueLabel.h; sourceTree = "<group>"; };
+		01030996207941840068D596 /* DOBlueLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBlueLabel.m; sourceTree = "<group>"; };
+		01030998207941BA0068D596 /* DOFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFactory.h; sourceTree = "<group>"; };
+		01030999207941BA0068D596 /* DOFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOFactory.m; sourceTree = "<group>"; };
+		0103099B207941D10068D596 /* DORedFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORedFactory.h; sourceTree = "<group>"; };
+		0103099C207941D10068D596 /* DORedFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORedFactory.m; sourceTree = "<group>"; };
+		0103099E207941DD0068D596 /* DOBlueFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBlueFactory.h; sourceTree = "<group>"; };
+		0103099F207941DD0068D596 /* DOBlueFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBlueFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +120,8 @@
 		0103095120793F580068D596 /* AbstractFactoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0103098B207941310068D596 /* FactoryModel */,
+				0103098A2079412A0068D596 /* View */,
 				0103098620793F740068D596 /* Controller */,
 				0103098520793F6E0068D596 /* Bases */,
 				0103098420793F670068D596 /* Resources */,
@@ -151,6 +174,34 @@
 				0103098820793FAF0068D596 /* DoRootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0103098A2079412A0068D596 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0103098C2079414E0068D596 /* DORedView.h */,
+				0103098D2079414E0068D596 /* DORedView.m */,
+				0103098F207941590068D596 /* DOBlueView.h */,
+				010309902079415A0068D596 /* DOBlueView.m */,
+				01030992207941790068D596 /* DORedLabel.h */,
+				01030993207941790068D596 /* DORedLabel.m */,
+				01030995207941840068D596 /* DOBlueLabel.h */,
+				01030996207941840068D596 /* DOBlueLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0103098B207941310068D596 /* FactoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				01030998207941BA0068D596 /* DOFactory.h */,
+				01030999207941BA0068D596 /* DOFactory.m */,
+				0103099B207941D10068D596 /* DORedFactory.h */,
+				0103099C207941D10068D596 /* DORedFactory.m */,
+				0103099E207941DD0068D596 /* DOBlueFactory.h */,
+				0103099F207941DD0068D596 /* DOBlueFactory.m */,
+			);
+			path = FactoryModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +334,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0103096220793F590068D596 /* main.m in Sources */,
+				0103099A207941BA0068D596 /* DOFactory.m in Sources */,
+				0103099D207941D10068D596 /* DORedFactory.m in Sources */,
+				010309A0207941DD0068D596 /* DOBlueFactory.m in Sources */,
 				0103098920793FAF0068D596 /* DoRootVC.m in Sources */,
+				010309912079415A0068D596 /* DOBlueView.m in Sources */,
 				0103095420793F580068D596 /* AppDelegate.m in Sources */,
+				0103098E2079414E0068D596 /* DORedView.m in Sources */,
+				01030997207941840068D596 /* DOBlueLabel.m in Sources */,
+				01030994207941790068D596 /* DORedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
