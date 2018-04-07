@@ -14,6 +14,12 @@
 		0103091220791AAF0068D596 /* FactoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103091120791AAF0068D596 /* FactoryDemoTests.m */; };
 		0103091D20791AAF0068D596 /* FactoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103091C20791AAF0068D596 /* FactoryDemoUITests.m */; };
 		0103092F20791AF50068D596 /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103092E20791AF50068D596 /* DORootVC.m */; };
+		0103093620791DF00068D596 /* DOColorViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103093520791DF00068D596 /* DOColorViewGenerator.m */; };
+		0103093920791E180068D596 /* DORedGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103093820791E180068D596 /* DORedGenerator.m */; };
+		0103093C20791E2D0068D596 /* DOBlueGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103093B20791E2D0068D596 /* DOBlueGenerator.m */; };
+		0103093F20791E420068D596 /* DOColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103093E20791E420068D596 /* DOColorView.m */; };
+		0103094220791E5D0068D596 /* DORedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103094120791E5D0068D596 /* DORedView.m */; };
+		0103094520791E690068D596 /* DOBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103094420791E690068D596 /* DOBlueView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,18 @@
 		0103091E20791AAF0068D596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0103092D20791AF50068D596 /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		0103092E20791AF50068D596 /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		0103093420791DF00068D596 /* DOColorViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOColorViewGenerator.h; sourceTree = "<group>"; };
+		0103093520791DF00068D596 /* DOColorViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOColorViewGenerator.m; sourceTree = "<group>"; };
+		0103093720791E180068D596 /* DORedGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORedGenerator.h; sourceTree = "<group>"; };
+		0103093820791E180068D596 /* DORedGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORedGenerator.m; sourceTree = "<group>"; };
+		0103093A20791E2D0068D596 /* DOBlueGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBlueGenerator.h; sourceTree = "<group>"; };
+		0103093B20791E2D0068D596 /* DOBlueGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBlueGenerator.m; sourceTree = "<group>"; };
+		0103093D20791E420068D596 /* DOColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOColorView.h; sourceTree = "<group>"; };
+		0103093E20791E420068D596 /* DOColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOColorView.m; sourceTree = "<group>"; };
+		0103094020791E5D0068D596 /* DORedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORedView.h; sourceTree = "<group>"; };
+		0103094120791E5D0068D596 /* DORedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORedView.m; sourceTree = "<group>"; };
+		0103094320791E690068D596 /* DOBlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBlueView.h; sourceTree = "<group>"; };
+		0103094420791E690068D596 /* DOBlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBlueView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,8 @@
 		010308F720791AAE0068D596 /* FactoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0103093020791D9F0068D596 /* Model */,
+				0103093320791DCA0068D596 /* View */,
 				0103092C20791AC70068D596 /* Controller */,
 				0103092B20791AC20068D596 /* Bases */,
 				0103092A20791ABC0068D596 /* Resources */,
@@ -151,6 +171,32 @@
 				0103092E20791AF50068D596 /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0103093020791D9F0068D596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0103093420791DF00068D596 /* DOColorViewGenerator.h */,
+				0103093520791DF00068D596 /* DOColorViewGenerator.m */,
+				0103093720791E180068D596 /* DORedGenerator.h */,
+				0103093820791E180068D596 /* DORedGenerator.m */,
+				0103093A20791E2D0068D596 /* DOBlueGenerator.h */,
+				0103093B20791E2D0068D596 /* DOBlueGenerator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0103093320791DCA0068D596 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0103093D20791E420068D596 /* DOColorView.h */,
+				0103093E20791E420068D596 /* DOColorView.m */,
+				0103094020791E5D0068D596 /* DORedView.h */,
+				0103094120791E5D0068D596 /* DORedView.m */,
+				0103094320791E690068D596 /* DOBlueView.h */,
+				0103094420791E690068D596 /* DOBlueView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0103092F20791AF50068D596 /* DORootVC.m in Sources */,
+				0103093920791E180068D596 /* DORedGenerator.m in Sources */,
+				0103093C20791E2D0068D596 /* DOBlueGenerator.m in Sources */,
+				0103093F20791E420068D596 /* DOColorView.m in Sources */,
+				0103094520791E690068D596 /* DOBlueView.m in Sources */,
+				0103093620791DF00068D596 /* DOColorViewGenerator.m in Sources */,
 				0103090820791AAF0068D596 /* main.m in Sources */,
 				010308FA20791AAE0068D596 /* AppDelegate.m in Sources */,
+				0103094220791E5D0068D596 /* DORedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
