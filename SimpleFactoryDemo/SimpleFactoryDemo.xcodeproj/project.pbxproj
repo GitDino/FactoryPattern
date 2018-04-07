@@ -14,6 +14,10 @@
 		010308C1207912CD0068D596 /* SimpleFactoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308C0207912CD0068D596 /* SimpleFactoryDemoTests.m */; };
 		010308CC207912CD0068D596 /* SimpleFactoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308CB207912CD0068D596 /* SimpleFactoryDemoUITests.m */; };
 		010308DE2079133B0068D596 /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308DD2079133B0068D596 /* DORootVC.m */; };
+		010308E22079158D0068D596 /* DOFruits.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308E12079158D0068D596 /* DOFruits.m */; };
+		010308E5207915B90068D596 /* DOApple.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308E4207915B90068D596 /* DOApple.m */; };
+		010308E8207915CA0068D596 /* DOBanana.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308E7207915CA0068D596 /* DOBanana.m */; };
+		010308EB207917260068D596 /* DOFruitsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 010308EA207917260068D596 /* DOFruitsFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		010308CD207912CD0068D596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010308DC2079133B0068D596 /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		010308DD2079133B0068D596 /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		010308E02079158D0068D596 /* DOFruits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFruits.h; sourceTree = "<group>"; };
+		010308E12079158D0068D596 /* DOFruits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOFruits.m; sourceTree = "<group>"; };
+		010308E3207915B90068D596 /* DOApple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOApple.h; sourceTree = "<group>"; };
+		010308E4207915B90068D596 /* DOApple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOApple.m; sourceTree = "<group>"; };
+		010308E6207915CA0068D596 /* DOBanana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOBanana.h; sourceTree = "<group>"; };
+		010308E7207915CA0068D596 /* DOBanana.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOBanana.m; sourceTree = "<group>"; };
+		010308E9207917260068D596 /* DOFruitsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFruitsFactory.h; sourceTree = "<group>"; };
+		010308EA207917260068D596 /* DOFruitsFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOFruitsFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		010308A6207912CC0068D596 /* SimpleFactoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				010308DF207915690068D596 /* Model */,
 				010308DB207913110068D596 /* Controller */,
 				010308DA207913010068D596 /* Bases */,
 				010308D9207912D80068D596 /* Resources */,
@@ -151,6 +164,21 @@
 				010308DD2079133B0068D596 /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		010308DF207915690068D596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				010308E9207917260068D596 /* DOFruitsFactory.h */,
+				010308EA207917260068D596 /* DOFruitsFactory.m */,
+				010308E02079158D0068D596 /* DOFruits.h */,
+				010308E12079158D0068D596 /* DOFruits.m */,
+				010308E3207915B90068D596 /* DOApple.h */,
+				010308E4207915B90068D596 /* DOApple.m */,
+				010308E6207915CA0068D596 /* DOBanana.h */,
+				010308E7207915CA0068D596 /* DOBanana.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				010308DE2079133B0068D596 /* DORootVC.m in Sources */,
+				010308E8207915CA0068D596 /* DOBanana.m in Sources */,
+				010308E5207915B90068D596 /* DOApple.m in Sources */,
+				010308E22079158D0068D596 /* DOFruits.m in Sources */,
 				010308B7207912CD0068D596 /* main.m in Sources */,
 				010308A9207912CC0068D596 /* AppDelegate.m in Sources */,
+				010308EB207917260068D596 /* DOFruitsFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
